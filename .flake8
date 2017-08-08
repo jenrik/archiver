@@ -1,0 +1,9 @@
+[flake8]
+exclude = 
+	.git,
+	__pycache__,
+	archiver/migrations,
+	manage.py
+	virtualenv,
+ignore = E265,E501
+application-import-name = flake8_import_order

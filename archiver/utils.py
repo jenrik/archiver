@@ -1,5 +1,3 @@
-import urllib2
-
 def archive_link(link):
     # Create a snapshot of the link on the internet archive
     # ToDo

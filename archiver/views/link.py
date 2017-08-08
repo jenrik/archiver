@@ -1,9 +1,9 @@
 import uuid
 
-from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, redirect
-
 from archiver.models.link import Link
+
+from django.http import HttpResponse, HttpResponseBadRequest
+from django.shortcuts import get_object_or_404, redirect
 
 
 def redirect_link_original(request, identifier):

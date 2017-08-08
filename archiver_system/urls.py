@@ -13,9 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from archiver.views.link import redirect_link_archive, redirect_link_original
+
 from django.conf.urls import url
 from django.contrib import admin
-from archiver.views.link import redirect_link_archive, redirect_link_original
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
